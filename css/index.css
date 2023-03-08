@@ -1,0 +1,554 @@
+body{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.header{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding-left: 50px;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+}
+
+.noBullets{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 50px;
+    gap: 59px;
+    font-family: 'Sora', sans-serif;
+}
+
+li, a{
+   text-decoration: none; 
+   background-color: none;
+   color: black;
+}
+
+button > a{
+    color: white;
+}
+
+li:hover{
+    color: #1F4590;
+    border-bottom: 1px solid black;
+    border-bottom-color: #1F4590;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+/* MAIN */
+
+.mainHeader{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.mainText{
+    flex: 1;
+    margin-top: 30px;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140.18%;
+
+}
+
+.mainText2{
+    line-height: 0px;
+    color: #1F4590
+
+}
+
+.mainText3 {
+    padding-top: 40px;
+    padding-left: 15px;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 25.87px;
+    width: 80%;
+}
+
+
+.mainImg{
+    flex: 1;
+}
+
+.mainImg:hover{
+    animation: shake 4s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.button {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 40px;
+    background-color: #1F4590;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+/* CUSTOMER EXPERIENCES */
+
+.mainSecond{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+
+.customerExp{
+    flex: 1;
+    /* background-color: red; */
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+.CustomerExpContainer, .CustomerExpPPContainer{
+    text-align: center;
+}
+
+.CustomerExpImg{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.CustomerExpPP{
+    margin-top: 30px;
+    width: 50px;
+}
+
+
+.CustomerExpText{
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+
+/* CONTACT US */
+
+.contactUs{
+    font-family: 'Sora', sans-serif;
+    flex: 1;
+    /* background-color: red; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+.contactText p:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contactText p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formName, .formEmail, .formSelect{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+/* Our Packages */
+
+.ourPackagesHead{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    height: 60px;
+    background-color: #1F4590;
+    text-align: center;
+   
+}
+
+.packageContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ourPackagesText{
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 20px;
+}
+
+.packageNodes{
+    padding-left: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.packageNodes > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+    
+}
+
+.packageNodes p:nth-of-type(1){
+    width: 300px;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.packageNodes > p{
+    width: 300px;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+/* Footer */
+
+.footerContainer{
+    color: white;
+    background-color: #1F4590;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Sora', sans-serif
+}
+
+/* FOOTER ONE */
+
+.footer-one{
+    flex: 2;
+    margin-top: 30px;
+}
+
+
+.logoFooter{
+    padding-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.footer-one > p{
+    margin-left: 55px;
+    padding-bottom: 5px;
+}
+
+.footer-one > div{
+    margin-left: 55px;
+    
+}
+
+.footer-one p:nth-of-type(2){
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+
+/* FOOTER TWO */
+
+.footer-two{
+    flex: 1;
+    margin-top: 30px;
+}
+
+/* FOOTER THREE */
+
+.footer-three{
+    flex: 1;
+    margin-top: 30px;
+}
+
+/* FOOTER FOUR */
+
+.footer-four{
+    flex: 1;
+    margin-top: 30px;
+}
+
+
+.footer-two p:nth-of-type(1){
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.footer-three p:nth-of-type(1){
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.footer-four p:nth-of-type(1){
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+
+.button-form {
+    margin-top: 20px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    background-color: #1F4590;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button-form:hover{
+    background-color: #0055ff;
+  }
+
+
+
+@media only screen and (max-width: 600px){
+    /* HEADER */
+
+    .header{
+        flex-direction: column;
+        padding-left: 0px;
+        height: 120px;
+        text-align: center;
+    }
+    
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .noBullets{
+        display: flex;
+        flex-direction: row;
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .mainHeader{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .mainImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+
+    .mainText1{
+        font-size: 35px;
+    }
+    
+    .mainText2 {
+        color: #1F4590;
+        font-size: 35px;
+    }
+    
+    .mainText3 {
+        padding-top: 40px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 18px;
+        width: 90%
+    }
+
+    .button{
+        margin-left: 0px;
+        margin-top: 40px;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+    }
+
+    .mainSecond{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    /* CUSTOMER EXPERIENCES */
+
+    .mainSecond{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customerExp{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 50px;
+    }
+
+    .CustomerExpPP{
+        margin-top: 30px;
+        width: 70px;
+    }
+
+
+    .CustomerExpText{
+        font-family: 'Sora', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* CONTACT US */
+
+    .contactUs{
+        font-family: 'Sora', sans-serif;
+        flex: 1;
+        /* background-color: red; */
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .contactText p:nth-of-type(1){
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .contactText p:nth-of-type(2){
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .formName, .formEmail, .formSelect{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+    .button-form {
+        margin-bottom: 20px;
+        
+        }
+
+    /* FOOTER */
+    
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+    }
+
+    .logoFooter{
+        padding-left: 0px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .footer-one > div{
+        margin-left: 0px;
+        
+    }
+
+    .footer-one > p{
+        margin-left: 0px;
+        padding-bottom: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+
+}

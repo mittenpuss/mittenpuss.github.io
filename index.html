@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelU</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/630d4e4fb3.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <div>
+            <img class="logo" src="/assets/TravelU.png" alt="">
+        </div>
+        <div>
+            <ul class="noBullets">
+                <li> <a href="#home">HOME</a></li>
+                <li> <a href="#contactUs">CONTACT US</a> </li>
+                <li> <a href="#ourPackages">OUR PACKAGES</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="mainHeader">
+            <div class="headerLeft">
+                <div class="mainText">
+                    <h1 class="mainText1">Your Trusted</h1>
+                    <h1 class="mainText2">Travel Agent's</h1>    
+                </div>
+                <p class="mainText3"> Kami percaya bahwa liburan bukan hanya tentang mencapai tujuan akhir, tetapi juga tentang perjalanan menuju kesana. 
+                    Oleh karena itu, kami menawarkan pilihan perjalanan yang menawarkan pengalaman lokal yang otentik dan 
+                    menggabungkan petualangan, rekreasi, budaya, dan kuliner dalam satu paket yang tak terlupakan. <b>Your happiness is our happiness!</b></p>
+                <button class="button"> <a href="#ourPackages">Check Our Packages!</button>
+
+            </div>
+            <img class="mainImg" src="/assets/header.png" alt="">
+        </div>
+    </main>
+
+    <div class="mainSecond">
+        <div class="customerExp">
+            <div class="CustomerExpContainer">
+                <img class="CustomerExpImg" src="/assets/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="">
+            </div>
+            <div class="CustomerExpPPContainer">
+                <img class="CustomerExpPP" src="/assets/profilepic.png" alt="">
+            </div>
+            <div class="CustomerExpText">
+                <p>"TravelU sangat membantu saya dan teman-teman dalam merencanakan 
+                    liburan kami! Harganya juga terjangkau dan pegawainya sangat ramah! 
+                    Super recommended!"
+                </p>
+                <p><b>Angga Wijaya</b></p>
+                <p style="color: #1F4590;"><b>Pekerja Kantoran, 28 Tahun</b></p>    
+            </div>
+        </div>
+
+        <!-- CONTACT US -->
+        <div class="contactUs" id="contactUs">
+            <div class="contactText">
+                <p>Contact us</p>
+                <p>Sales akan menghubungi anda  1x24 jam setelah data kami terima.</p>
+            </div>
+            <form class="contactForm" name="contactForm" onsubmit="return validateForm()">
+                <label for="formName">Your Name:</label><br>
+                <input class="formName" type="text" id="name" name="name" placeholder="First and Last Name"><br><br>
+                
+                <label for="email">Your Email:</label><br>
+                <input class="formEmail" type="text" id="email" name="email" placeholder="example@email.com" sty><br><br>
+
+                <label for="interest">What are you interested in?</label><br>
+                <select class="formSelect" id="interest" name="interest">
+                    <option value="bali">Bali</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="manado">Manado</option>
+                    <option value="lombok">Lombok</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="malang">Malang</option>
+
+                </select>
+
+                
+                <button class="button-form" type="submit" value="submit">SEND</button>
+            </form>
+
+            <script>
+                function validateForm(){
+                    var name = document.forms['contactForm']['name'].value
+                    var email = document.forms['contactForm']['email'].value
+                    var interest = document.forms['contactForm']['interest'].value
+
+                    if(name == "" || email == "" || interest == ""){
+                        alert(`Semua pilihan belum terisi, mohon lengkapi pilihan Anda`)
+                    }else{
+                        alert(`Email akan segera dikirimkan kepada Anda dengan nama: ${name}, email: ${email}, dan destinasi pariwisata yang diinginkan: ${interest}`)
+                    }
+                    
+                    // return false;
+                }
+            </script>
+
+        </div>
+    </div>
+
+
+    <div class="ourPackagesHead">
+        <p class="ourPackagesText" >Our Packages</p>
+    </div>
+
+    <div class="packageContainer" id="ourPackages">
+        <div class="packageNodes">
+            <img src="/assets/city/Bali.jpg" alt="">
+            <p>Bali</p>
+            <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+        </div>
+
+        <div class="packageNodes">
+            <img src="/assets/city/Jakarta.jpg" alt="">
+            <p>Jakarta</p>
+            <p>Travel dan wisata di Jakarta. Kunjungi ibukota Indonesia dan kemegahannya.</p>
+        </div>
+
+        <div class="packageNodes">
+            <img src="/assets/city/Manado.jpg" alt="">
+            <p>Manado</p>
+            <p>Travel dan wisata di Manado. Salah satu destinasi wisata hidden-gem di Indonesia.</p>
+        </div>
+
+        <div class="packageNodes">
+            <img src="/assets/city/Lombok.jpg" alt="">
+            <p>Lombok</p>
+            <p>Travel dan wisata di Lombok. Banyak pemandangan alam yang sangat indah</p>
+        </div>
+
+        <div class="packageNodes">
+            <img src="/assets/city/Bandung.jpg" alt="">
+            <p>Bandung</p>
+            <p>Travel dan wisata di Bandung. Paris Van Java adalah sebutan kota ini, temukan banyak kuliner yang lezat.</p>
+        </div>
+
+        <div class="packageNodes">
+            <img src="/assets/city/Malang.jpg" alt="">
+            <p>Malang</p>
+            <p>Travel dan wisata di Malang. Kota indah yang menyimpan banyak peninggalan sejarah.</p>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footerContainer">
+        <div class="footer-one">
+            <img class="logoFooter" src="/assets/TravelU.png" alt="">
+            <p>Your Trusted Travel Agent's</p>
+            <div>
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i style="padding-left:20px" class="fa-brands fa-twitter fa-2xl"></i>
+                <i style="padding-left:20px" class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+            <p><i class="fa-regular fa-copyright"></i> Copyright 2023 All right Reserved | Build by Angga Wijaya</p>
+        </div>
+
+        <div class="footer-two">
+            <p>About</p>
+            <p>About us</p>
+            <p>Features</p>
+            <p>News</p>
+        </div>
+
+        <div class="footer-three">
+            <p>Support</p>
+            <p>Account</p>
+            <p>Support center</p>
+            <p>Feedback</p>
+            <p>Accessibility</p>
+        </div>
+
+        <div class="footer-four">
+            <p>Company</p>
+            <p>Why TravelU?</p>
+            <p>Partner with us</p>
+            <p>FAQ</p>
+        </div>
+
+
+    </footer>
+
+</body>
+</html>
